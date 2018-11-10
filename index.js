@@ -6,7 +6,7 @@ app.post('/webhook', (req,res) => {
         {
             "fulfillmentText": "This is a text response"
         }
-    )
+    ) 
 })
 
 app.listen(3000, () => console.log('Gator app listening on port 3000!'));
