@@ -1,0 +1,18 @@
+{
+  "Applied Mathematics":{
+    "124":{
+      "subject": "Statics",
+      "contents": "Vectors; forces; sum of forces at a point; direction cosines and direction angles; components and component vectors; scalar products; vector products; moment of a force; force systems on rigid bodies; equivalent force systems; couples; line of action of the resultant; equilibrium of a rigid body; friction; centre of mass; centroid; volumes; definite integration; moment of inertia of areas.",
+      "department": "Mathematical Sciences",
+      "method_of_assessment": "Flexible Assessment",
+      "required_modules": []
+    },
+    "154":{
+      "subject": "Dynamics",
+      "contents": "Kinematics in one and two dimensions; relative velocities; the equations of motion; rectilinear motion with constant forces; forces in a plane; parabolic motion; circular motion; the principle of work and energy; power; conservation laws; impulse and momentum; angle impulse and angle momentum; kinetics of particle systems.",
+      "department": "Mathematical Sciences",
+      "method_of_assessment": "Flexible Assessment",
+      "required_modules": ["Engineering Mathematics 115", "Applied Mathematics 124"]
+    }
+  }
+}
