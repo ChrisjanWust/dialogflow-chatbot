@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 
 app.post('/webhook', (req,res) => {
+
+    /*
     console.log('- - - - B O D Y - - - -' + req.body)
 
     const intent = req.body.queryResult.intent.displayName
@@ -13,6 +15,7 @@ app.post('/webhook', (req,res) => {
     if (intent === "location"){
 
     }
+    */
 
 
     res.send(
