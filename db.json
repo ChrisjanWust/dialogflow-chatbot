@@ -1,0 +1,47 @@
+{
+  "classrooms": {
+            "A107":{
+              "url": "https://goo.gl/maps/PyocaDJngX32",
+              "building": "Engineering"
+            },
+            "S207":{
+              "url": "https://goo.gl/maps/PyocaDJngX32",
+              "building": "Engineering"
+            },
+            "1007":{
+              "url": "https://goo.gl/maps/PyocaDJngX32",
+              "building": "GC Cilliers"
+            }
+          },
+
+
+
+
+
+
+
+
+  "buildings": {
+            "Engineering":{
+              "url": "https://goo.gl/maps/PyocaDJngX32",
+              "street_address": "Banghoek Rd, Stellenbosch Central, Stellenbosch, 7599"
+            },
+            "GC Cilliers":{
+              "url": "https://goo.gl/maps/PyocaDJngX32",
+              "street_address": "Banghoek Rd, Stellenbosch Central, Stellenbosch, 7599"
+            },
+            "Schoemann":{
+              "url": "https://goo.gl/maps/PyocaDJngX32",
+              "street_address": "Banghoek Rd, Stellenbosch Central, Stellenbosch, 7599"
+            }
+          },
+
+
+  "modules":{
+
+  }
+
+
+
+
+}

@@ -1,10 +1,19 @@
 const express = require('express')
 const app = express()
+app.use(express.json())    // <==== parse request body as JSON
+
+
+const intentHandler = require('./intentHandler')
+
+
+intentHandler.handle_location("Engineering")
+
 
 app.post('/webhook', (req,res) => {
+    console.log("/webhook triggered")
 
-    /*
-    console.log('- - - - B O D Y - - - -' + req.body)
+    //console.log("REQUEST:")
+    //console.log(req.body)
 
     const intent = req.body.queryResult.intent.displayName
     console.log("Intent: " + intent)
@@ -12,30 +21,29 @@ app.post('/webhook', (req,res) => {
     const parameters = req.body.queryResult.parameters
     console.log("Parameters: \n" + parameters)
 
-    if (intent === "location"){
 
+    let fulfillmentText = "The intent was recognized, but not implemented in the server."
+
+    switch(intent){
+        case "location": {
+            fulfillmentText = intentHandler.handle_location(parameters)
+        }
     }
-    */
 
 
     res.send(
         {
-            "fulfillmentText": "Text response from NOW server."
+            "fulfillmentText": fulfillmentText
         }
     )
 })
 
-app.listen(3000, () => console.log('Gator app listening on port 3000!'))
 
 
-function getLocation(location) {
-    locations = JSON.parse("locations.json")
 
-    let request = new XMLHttpRequest();
-    request.open("GET", "../locations.json", false);
-    request.send(null)
-    let my_JSON_object = JSON.parse(request.responseText);
-    //console.log(my_JSON_object)
-    alert (my_JSON_object.result[0])
-    console.log(my_JSON_object.result[0])
-}
+
+
+
+
+
+app.listen(3000, () => console.log('Server listening on port 3000'))
